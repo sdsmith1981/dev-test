@@ -1,3 +1,138 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+:root {
+    --primary-bg-color-light: #EEEEEE;
+    --primary-bg-color-dark: #222831;
+    --secondary-bg-color-light: #FFFFFF;
+    --secondary-bg-color-dark: #393E46;
+    --accent-color: #00ADB5;
+    --text-color-light: #222831;
+    --text-color-dark: #EEEEEE;
+
+    --bs-btn-color: var(--text-color-dark);
+    --bs-btn-border-color: var(--accent-color);
+    --bs-btn-hover-color: var(--text-color-dark);
+    --bs-btn-hover-bg: var(--accent-color);
+    --bs-btn-hover-border-color: var(--accent-color);
+    --bs-btn-focus-shadow-rgb: 0, 173, 181;
+    --bs-btn-active-color: var(--text-color-dark);
+    --bs-btn-active-bg: var(--accent-color);
+    --bs-btn-active-border-color: var(--accent-color);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--accent-color);
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: var(--accent-color);
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-bg-color-light);
+    color: var(--text-color-light);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.logo {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.logo,
+.toggle-darkmode {
+    font-size: 25pt;
+}
+
+.logo:hover,
+.toggle-darkmode:hover {
+    color: var(--accent-color);
+}
+
+.toggle-darkmode {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    cursor: pointer;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.typewriter span {
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: typing 1s steps(30, end);
+    width: 100%;
+    border-right: 0;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+footer {
+    text-align: center;
+}
+
+.btn-outline-success {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+.btn-outline-success:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-bg-color-light);
+}
+
+input {
+    background-color: var(--secondary-bg-color-light);
+    border-color: var(--accent-color);
+    color: var(--text-color-light);
+}
+
+input::placeholder {
+    color: var(--text-color-light);
+    opacity: 0.8;
+}
+
+input:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 5px var(--accent-color);
+}
+
+body.dark-mode {
+    background-color: var(--primary-bg-color-dark);
+    color: var(--text-color-dark);
+}
+
+input.dark-mode {
+    border: none !important;
+}
+
+input.dark-mode, button.dark-mode {
+    background-color: var(--secondary-bg-color-dark);
+    color: var(--text-color-dark);
+}
+
+input.dark-mode::placeholder {
+    color: var(--text-color-dark);
+    opacity: 0.8;
+}
+
+.btn-outline-success.dark-mode:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-bg-color-dark);
+}
+
+.form-control:focus {
+    border-color: var(--accent-color) !important;
+    box-shadow: 0 0 0 .25rem rgba(0, 173, 181, .25) !important;
+}
