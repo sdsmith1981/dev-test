@@ -1,66 +1,77 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Shopblocks PHP Developer Test: Pet-é-dex 
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Welcome to the **Shopblocks PHP Developer Test: Pet-é-dex**! This project evaluates your skills in working with APIs, building user interfaces, and implementing core functionality using PHP and Laravel. While design skills are a bonus, we will focus mainly on usability, performance, and security.
 
-## About Laravel
+## Introduction
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Your task is to create a **Pet-é-dex** a web-based encyclopedia for either dogs or cats. You can choose between:
+- [The Cat API](https://thecatapi.com/)
+- [The Dog API](https://thedogapi.com/)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+This project will provide users with the ability to search for and display information about specific breeds, based on the selected API.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Project Requirements
 
-## Learning Laravel
+To complete the project, make sure you have the following installed:
+- **Composer**
+- **Git**
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+The front-end of the application **must be built using Bootstrap** to ensure a responsive and clean design. Feel free to add custom styling as needed.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### Additional Requirements
+- You will be provided with a skeleton Laravel application.
+- You must fork this repository to your own public GitHub account to complete the task.
+- We recommend spending no more than two hours on this challenge.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Task Requirements
 
-## Laravel Sponsors
+You are required to build a **Pokédex-style web app** (Pet-é-dex) that allows users to search for and display information about pet breeds, using your chosen API.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+- Api keys will be provided in the example .env file within the laravel application.
+- The API is rate-limited, so be cautious when making requests.
+- You must implement a search functionality to filter breeds by name.
 
-### Premium Partners
+### Key Features:
+1. **Main Pet-é-dex Page**:
+    - Display a full list of pets fetched from the API.
+    - Provide a search form to allow users to filter the list by pet breed name.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+2. **Pet Overview Page**:
+    - When a pet breed is clicked from the main page, redirect to a detailed overview page.
+    - Display pet information such as image, breed name, temperament, life expectancy, and other relevant data.
 
-## Contributing
+3. **Navigation**:
+    - Include a navigation link to go back to the main page from the Pet Overview page.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## User Stories
 
-## Code of Conduct
+| As an       | I want to                                   | So that I can                                        |
+|-------------|---------------------------------------------|-----------------------------------------------------|
+| End User    | Search for a specific pet breed             | Confirm information such as temperament, life expectancy, etc. about the breed |
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## Acceptance Criteria
 
-## Security Vulnerabilities
+| GIVEN                  | WHEN                                     | THEN                                                                |
+|------------------------|------------------------------------------|---------------------------------------------------------------------|
+| I am on the main Pet-é-dex page | The page loads                            | I can see a full list of available pets                             |
+| ^                      | ^                                        | I can see a search form to filter the list by pet breed              |
+| ^                      | I enter a breed name and search          | I can see a filtered list of matching results                       |
+| ^                      | I click on a pet breed in the list       | I am redirected to the pet's overview page                          |
+| I am on the Pet Overview page | The page loads                            | I can see an image, name, breed, and other details returned from the API |
+| ^                      | ^                                        | I can see a link back to the main page                              |
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## Submission
 
-## License
+Once you’ve completed the test:
+- Ensure you have forked the repository.
+- No pull/merge request is required.
+- Provide a link to your forked repository for review.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Notes
+
+- We’re more interested in **how you approach the task** rather than expecting a fully polished product. Focus on functionality above styling but the front-end should be easy to use and responsive.
+- Consider **performance and security** when making API requests.
+
+## Copyright
+
+All trademarks are the property of their respective owners.
