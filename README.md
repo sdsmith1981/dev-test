@@ -67,6 +67,11 @@ You are required to build a **Pokédex-style web app** (Pet-é-dex) that allows 
 The api documentation can be found here: https://documenter.getpostman.com/view/5578104/RWgqUxxh. The api is the same for
 both cats and dogs. So the only difference if the url being either thecatapi.com or thedogapi.com.
 
+## Getting Setup
+
+To get started clone the repo, once cloned run `make setup` in the root of the clone repo this will setup the environment for
+you.
+
 ## Submission
 
 Once you’ve completed the test:
