@@ -4,7 +4,7 @@ Welcome to the **Shopblocks PHP Developer Test: Pet-é-dex**! This project evalu
 
 ## Introduction
 
-Your task is to create a **Pet-é-dex** a web-based encyclopedia for either dogs or cats. You can choose between:
+Your task is to create a **Pet-é-dex** web-based encyclopedia for either dogs or cats. You can choose between:
 - [The Cat API](https://thecatapi.com/)
 - [The Dog API](https://thedogapi.com/)
 
@@ -13,7 +13,7 @@ This project will provide users with the ability to search for and display infor
 ## Project Requirements
 
 To complete the project, make sure you have the following installed:
-- **Composer**
+- **Docker**
 - **Git**
 
 The front-end of the application **must be built using Bootstrap** to ensure a responsive and clean design. Feel free to add custom styling as needed.
@@ -21,10 +21,10 @@ The front-end of the application **must be built using Bootstrap** to ensure a r
 ### Additional Requirements
 
 - You will be provided with a skeleton Laravel application.
-- You must fork this repository to your own public GitHub account to complete the task.
-- We recommend spending no more than two hours on this challenge.
+- You must fork this repository to your own public GitHub account to complete the test.
+- We recommend spending no more than two hours on this test but we expect for senior developers this will take around an hour.
 
-## Task Requirements
+## Test Requirements
 
 You are required to build a **Pokédex-style web app** (Pet-é-dex) that allows users to search for and display information about pet breeds, using your chosen API.
 
@@ -82,7 +82,7 @@ Once you’ve completed the test:
 ## Notes
 
 - We’re more interested in **how you approach the task** rather than expecting a fully polished product. Focus on functionality above styling but the front-end should be easy to use and responsive.
-- Consider **performance and security** when making API requests.
+- Consider **performance, security and rate limits** when making API requests.
 
 ## Copyright
 
