@@ -19,6 +19,7 @@ To complete the project, make sure you have the following installed:
 The front-end of the application **must be built using Bootstrap** to ensure a responsive and clean design. Feel free to add custom styling as needed.
 
 ### Additional Requirements
+
 - You will be provided with a skeleton Laravel application.
 - You must fork this repository to your own public GitHub account to complete the task.
 - We recommend spending no more than two hours on this challenge.
@@ -32,6 +33,7 @@ You are required to build a **Pokédex-style web app** (Pet-é-dex) that allows 
 - You must implement a search functionality to filter breeds by name.
 
 ### Key Features:
+
 1. **Main Pet-é-dex Page**:
     - Display a full list of pets fetched from the API.
     - Provide a search form to allow users to filter the list by pet breed name.
@@ -59,6 +61,11 @@ You are required to build a **Pokédex-style web app** (Pet-é-dex) that allows 
 | ^                      | I click on a pet breed in the list       | I am redirected to the pet's overview page                          |
 | I am on the Pet Overview page | The page loads                            | I can see an image, name, breed, and other details returned from the API |
 | ^                      | ^                                        | I can see a link back to the main page                              |
+
+## API Information 
+
+The api documentation can be found here: https://documenter.getpostman.com/view/5578104/RWgqUxxh. The api is the same for
+both cats and dogs. So the only difference if the url being either thecatapi.com or thedogapi.com.
 
 ## Submission
 
