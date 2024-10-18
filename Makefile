@@ -3,6 +3,7 @@ composer:
       --volume $(shell pwd):/app \
       composer/composer install
 setup:
+	cp .env.example .env
 	make composer
 	make start
 	./vendor/bin/sail artisan migrate
