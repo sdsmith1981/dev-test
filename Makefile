@@ -15,3 +15,6 @@ start:
 	./vendor/bin/sail up -d
 mysql-ready:
 	./vendor/bin/sail exec -T mysql bash -c 'until mysqladmin ping -h localhost --silent; do echo "Waiting for MySQL..."; sleep 1; done'
+reset:
+	./vendor/bin/sail down -v
+	make setup
