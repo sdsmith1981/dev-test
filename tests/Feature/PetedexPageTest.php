@@ -2,7 +2,6 @@
 
 namespace Tests\Feature;
 
-use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
 class PetedexPageTest extends TestCase
@@ -23,7 +22,7 @@ class PetedexPageTest extends TestCase
     {
         $response = $this->get('/');
         $response->assertSeeInOrder([
-            '<title>Petédex | Home</title>'
+            '<title>Petédex | Home</title>',
         ]);
     }
 
